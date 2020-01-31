@@ -41,9 +41,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void generateData(){
-        data.add("Data 1");
-        data.add("Data 2");
-        data.add("Data 3");
-        data.add("Data 4");
+        data.add("Hello Walkers");
+        data.add("You Are Not Alone");
+        data.add("Remember");
+        data.add("We Are Unity");
     }
 }

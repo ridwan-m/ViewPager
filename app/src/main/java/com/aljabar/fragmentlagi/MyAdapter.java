@@ -18,7 +18,7 @@ public class MyAdapter extends FragmentStatePagerAdapter {
     public static MyAdapter newInstance(FragmentManager fragmentManager, ArrayList<String> titles, ArrayList<String> data){
         MyAdapter myAdapter = new MyAdapter(fragmentManager);
         myTitles = titles;
-        data = data;
+        myData = data;
         numbOfItem = data.size(); // set numbOfData as size of data or titles
         return myAdapter;
     }
@@ -30,24 +30,11 @@ public class MyAdapter extends FragmentStatePagerAdapter {
     @NonNull
     @Override
     public Fragment getItem(int position) {
-        Fragment1 fragment1 = new Fragment1();
-        Fragment2 fragment2 = new Fragment2();
+        String text = myData.get(position);
 
-        Fragment item = null;
+        Fragment1 fragment1 = Fragment1.newInstance(text);
 
-        switch (position){
-            case 0:
-            item = fragment1;
-            break;
-            case 1:
-            item = fragment2;
-            break;
-            default:
-                item = fragment2;
-                break;
-        }
-
-        return item;
+        return fragment1;
     }
 
     @Override

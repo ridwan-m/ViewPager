@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Fragmentlagi</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_walkers">Hello Walkers</string>
+    <string name="walkers0">#0</string>
+</resources>
